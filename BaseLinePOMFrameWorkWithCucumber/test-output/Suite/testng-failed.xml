@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="10" name="Failed suite [Suite]">
+  <test thread-count="5" verbose="10" name="Test(failed)">
+    <parameter name="url" value="http://leaftaps.com/opentaps/control/main"/>
+    <classes>
+      <class name="testCases.TC003_DeleteLead">
+        <methods>
+          <include name="deleteLead" invocation-numbers="0"/>
+          <include name="login"/>
+          <include name="closeApp"/>
+          <include name="setData"/>
+        </methods>
+      </class> <!-- testCases.TC003_DeleteLead -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
